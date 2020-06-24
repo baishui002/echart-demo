@@ -7,6 +7,9 @@
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   background: url(../image/bg.jpg) no-repeat top center;
@@ -89,6 +92,10 @@ header {
         text-align: center;
         color: #fff;
         font-size: .25rem;
+        
+        a {
+          color: #fff;
+        }
       }
       .chart {
         height: 3rem;
@@ -259,5 +266,25 @@ header {
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
+}
+
+// 带3角的tooptip样式
+.div-tip-warp{
+  background-color: #266C7C;
+}
+.tip-background{
+  padding: 2px 8px;
+  background-color: #266C7C;
+  border-radius:3px;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #266C7C;
+}
+.triangle-position{
+  margin-left: 35px;
 }
 
